@@ -20,11 +20,14 @@ app.get('/kajal.jpeg', function (req, res) {
 app.get('/parth1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'parth1.jpg'));
 });
+app.get('/shubham.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'shubham.jpg'));
+});
 app.get('/gurnor.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'gurnor.jpg'));
 });
-app.get('/anirudh.jpeg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'anirudh.jpeg'));
+app.get('/ani.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ani.jpeg'));
 });
 app.get('/muskan.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'muskan.jpeg'));

@@ -6,26 +6,29 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname,'website.html'));
+  res.sendFile(path.join(__dirname,'web1.html'));
 });
-// app.get('/aman.jpg', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'aman.jpg'));
-// });
-// app.get('/kajal.jpg', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'kajal.jpg'));
-// });
-// app.get('/parth.jpg', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'parth.jpg'));
-// });
-// app.get('/gurnor.jpg', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'gurnor.jpg'));
-// });
-// app.get('/anirudh.jpg', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'anirudh.jpg'));
-// });
-// app.get('/muskan.jpg', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'muskan.jpg'));
-// });
+app.get('/aman.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'aman.jpg'));
+});
+app.get('/shantanu.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'shantanu.jpg'));
+});
+app.get('/kajal.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'kajal.jpeg'));
+});
+app.get('/parth1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'parth1.jpg'));
+});
+app.get('/gurnor.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'gurnor.jpg'));
+});
+app.get('/anirudh.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'anirudh.jpeg'));
+});
+app.get('/muskan.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'muskan.jpeg'));
+});
 var port = process.env.PORT || 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(port, function () {
   console.log(`Mozilla Campus Club ${port}!`);

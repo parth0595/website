@@ -77,6 +77,48 @@
           position: absolute;
           bottom: 0;
         }*/
+        .col-md-6 img{
+          /*border:7px black solid;*/
+          border-radius: 50%;
+
+        }
+        .college img{
+          width:50%;
+          heigth:350px;
+          border-radius: 36%;
+          padding-right:50%;
+        }
+        .col-sm-4 img{
+          height: 500px;
+          /*border:7px solid;*/
+          border-radius: 50%;
+        }
+        #muskan img{
+          height: 450px;
+          /*border:7px solid;*/
+          border-radius: 50%;
+
+
+          }
+          #aman img{
+            height: 450px;
+
+            /*border:7px  solid;*/
+            border-radius: 50%;
+          }
+          .caption{
+            color: white;
+          }
+          #abc .caption{
+            color:black
+          }
+          .college{
+            border-radius: 8%;
+            width:90%;
+            /*border:8px solid ;*/
+          }
+
+
   </style>
 </head>
 <body>
@@ -102,50 +144,68 @@
   </div>
 </nav>
 
+
+
+<!--<div class="col-md-6 college">
+  <a href="http://www.punjabiuniversity.ac.in/">
+    <img src="1.jpg">
+
+  </a>
+</div>
+
+<div class="col-md-6 ucoe text-center ">
+  <h2>UCOE</h2>
+  <p>
+    <h2>Punjabi University </h2>
+  </p>
+  <p>
+    <h3>PATIALA</h3>
+  </p>
+</div>-->
+
+
+
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
+
+
+<a href="http://punjabiuniversity.ac.in"><img class="college" src="college.jpg"></a>
+
   <h3 class="margin">Who We Are?</h3>
   <h3>We are College Mozillians who are trying to do something different.</h3>
   <p>
     <div class="row">
-    <div class="col-md-4">
-      <div class="img-rounded">
-        <a href="http://csepup.ac.in/img/1.jpg">
-          <img src="http://csepup.ac.in/img/1.jpg" alt="Lights" style="width:100%" height="320px">
-          <div class="caption">
-            <p>In the Campus Of</p>
-            <p>UCOE, Punjabi University</p>
-          </div>
-        </a>
+      <div class="col-md-6">
+        <div class="img-rounded">
+          <a href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/13173942_1110113019052364_382863322563506565_n.jpg?oh=129efaa2c61d35443c4698b9107d21fc&oe=5A1DB27C">
+            <img src="sir.jpg" alt="Fjords" style="width:50%"  >
+            <div class="caption" color=white>
+              <p>Supported By Incharge</p>
+              <p> Sikander Singh Cheema </p>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
+
+
+    <div class="col-md-6">
       <div class="img-rounded">
-        <a href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/12046834_873845819370081_1468191217070760812_n.jpg?oh=4364c6452611f43dab2ba65ddd9069b6&oe=5A1FDE33">
-          <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-0/p206x206/12301747_900934209994575_7682056659727746723_n.jpg?oh=64e33863bd101a3297e470a1f21ae6f9&oe=5A5A6B8E" alt="Nature" style="width:80%"  >
-          <div class="caption">
+        <a href="https://www.linkedin.com/in/parth-gupta-892623129/">
+          <img src="parth1.jpg" alt="Nature" style="width:50%"  >
+        <div class="caption"  >
             <p> Leaded By Club Captain</p>
             <p>  Parth Gupta </p>
           </div>
         </a>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="img-rounded">
-        <a href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/13173942_1110113019052364_382863322563506565_n.jpg?oh=129efaa2c61d35443c4698b9107d21fc&oe=5A1DB27C">
-          <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/13173942_1110113019052364_382863322563506565_n.jpg?oh=129efaa2c61d35443c4698b9107d21fc&oe=5A1DB27C" alt="Fjords" style="width:80%"  >
-          <div class="caption">
-            <p>Supported By Incharge</p>
-            <p> Sikander Singh Cheema </p>
-          </div>
-        </a>
-      </div>
-    </div>
+
+
   </div>
 </p>
-  <h4>We are with you, helping you to build the future of your dreams.</h4>
-  <h4>We are inviting you to learn with us.</h4>
-  <h4>We are inviting you to build with us.</h4>
+  <h2>We are with you, helping you to build the future of your dreams.</h2>
+  <h2>We are inviting you to learn with us.</h2>
+  <h2>We are inviting you to build with us.</h2>
 </div>
 
 <!-- Second Container -->
@@ -167,69 +227,78 @@
   <h3 class="margin">Here We Are!</h3><br>
   <p><button type="button" class="btn btn-success pull-left" onclick="location.href = 'https://mozillians-team.slack.com/';" ><i class="fa fa-slack"></i>  Join on Slack! </button> <button type="button" class="btn btn-primary pull-right" onclick="location.href = 'https://www.facebook.com/mozillacampusclubucoe/';" ><i class="fa fa-facebook-square"></i>  Follow on Fb!  </button></p>
 <p><br></p>
-    <div class="row">
+    <div class="row" id="abc">
       <div class="col-sm-4">
-        <img src="gurnor.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <a href=""><img src="gurnoor.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         <div class="caption">
           <p>Gurnoor</p>
           <p>Of the Team Rust</p>
         </div>
+        </a>
       </div>
 
       <div class="col-sm-4">
-        <img src="kajal.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+        <a href="https://www.facebook.com/kajal.angural.77"><img src="kajal.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         <div class="caption">
           <p>Kajal</p>
           <p>Of the Team A-frame</p>
         </div>
+        </a>
       </div>
 
       <div class="col-sm-4">
-        <img src="shubham.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <a href="https://www.facebook.com/profile.php?id=100008251454200"><img src="shubham.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         <div class="caption">
           <p>Shubham</p>
           <p>Of the Team Rust</p>
         </div>
+        </a>
       </div>
 
       <div class="col-sm-4">
-        <img src="parth1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <a href="https://www.facebook.com/stuffcreatives"><img src="parth1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         <div class="caption">
           <p>Parth</p>
           <p>Of the Team Node.JS</p>
         </div>
+        </a>
       </div>
       <div class="col-sm-4">
-        <img src="shantanu.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <a href="https://www.facebook.com/Shantanu.Dwivedi46"><img src="shantanu.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         <div class="caption">
           <p>Shantanu</p>
           <p>Of the Team Rust</p>
         </div>
+        </a>
       </div>
 
       <div class="col-sm-4">
-        <img src="muskan.jpeg" class="img-responsive margin" style="width:81%" alt="Image">
-        <div class="caption">
-          <p>Muskan</p>
-          <p>Of the Team Rust</p>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <img src="aman.jpg" class="img-responsive margin" style="width:85%" alt="Image">
-        <div class="caption">
-          <p>Aman</p>
-          <p>of the Team Ionic</p>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <img src="ani.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+      <a href="https://www.facebook.com/anirudh.singla.372">  <img src="anirudh.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         <div class="caption">
           <p>Anirudh</p>
           <p>Of the Team Python</p>
         </div>
+      </a>
       </div>
+
+            <div class="col-sm-4" id="muskan">
+              <a href=""><img src="muskan.jpg" class="img-responsive margin" style="width:81%" alt="Image">
+              <div class="caption">
+                <p>Muskan</p>
+                <p>Of the Team Rust</p>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4" id="aman">
+            <a href="https://www.facebook.com/aman.malhotra.374549">  <img src="aman.jpg" class="img-responsive margin" style="width:85%" alt="Image">
+              <div class="caption">
+                <p>Aman</p>
+                <p>of the Team Ionic</p>
+              </div>
+              </a>
+            </div>
+
 
       <!-- <div class="col-sm-4">
         <p>Abhimanyu</p>

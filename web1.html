@@ -42,9 +42,14 @@
       padding-bottom: 70px;
   }
   .navbar {
+
+    width: 100%;
+    position: fixed;
+    top: 0;
       padding-top: 15px;
       padding-bottom: 15px;
       border: 0;
+      z-index: 1;
       border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
@@ -127,7 +132,10 @@
             width:90%;
             border:5px solid black;
           }
-
+          .whole {
+            margin-top: 5%;
+            z-index: 2;
+          }
 
   </style>
 </head>
@@ -174,7 +182,7 @@
 </div>-->
 
 
-
+<div class="whole">
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
 
@@ -325,7 +333,7 @@
       </div>
     </div>
   </div>
-
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center" >

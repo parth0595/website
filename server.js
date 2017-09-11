@@ -11,9 +11,12 @@ app.get('/', function (req, res) {
 app.get('/aman.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'aman.jpg'));
 });
+app.get('/aakriti.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'aakriti.jpg'));
+});
 app.get('/college.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'college.jpg'));
-});
+}); 
 app.get('/shantanu.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'shantanu.jpg'));
 });

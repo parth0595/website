@@ -14,9 +14,15 @@ app.get('/aman.jpg', function (req, res) {
 app.get('/aakriti.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'aakriti.jpg'));
 });
-app.get('/college.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'college.jpg'));
-}); 
+app.get('/GitHub.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'GitHub.png'));
+});
+app.get('/rust.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'rust.jpg'));
+});
+app.get('/mozilla.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'mozilla.png'));
+});
 app.get('/shantanu.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'shantanu.jpg'));
 });

@@ -26,6 +26,9 @@ app.get('/mozilla.png', function (req, res) {
 app.get('/shantanu.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'shantanu.jpg'));
 });
+app.get('/icon.ico', function (req, res) {
+  res.sendFile(path.join(__dirname, 'icon.ico'));
+});
 app.get('/kajal.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'kajal.jpg'));
 });

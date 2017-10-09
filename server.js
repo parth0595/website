@@ -8,6 +8,21 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'web1.html'));
 });
+app.get('/wall1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname,'wall1.jpg'));
+});
+app.get('/wall2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname,'wall2.jpg'));
+});
+app.get('/wall3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname,'web3.jpg'));
+});
+app.get('/wall4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname,'wall4.jpg'));
+});
+app.get('/wall5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname,'wall5.jpg'));
+});
 app.get('/aman.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'aman.jpg'));
 });
@@ -25,9 +40,6 @@ app.get('/mozilla.png', function (req, res) {
 });
 app.get('/shantanu.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'shantanu.jpg'));
-});
-app.get('/images.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images.png'));
 });
 app.get('/kajal.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'kajal.jpg'));

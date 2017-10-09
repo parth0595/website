@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="images.png"/>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Mozilla@UCOE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +12,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
+      font: 20px Montserrat;
+      font-family: cursive;
+      line-height: 1.5;
       color: #f5f6f7;
   }
   /*h3{
@@ -24,92 +24,92 @@
   .margin {margin-bottom: 45px;}
   .bg-1 {
   /*    background-color: #1abc9c;  Green */
-      background-color: #1ABAB5; /*edited*/
+      /*background-color: #1ABAB5; edited*/
+      /*background-color: black;*/
+      background-image: url("wall5.jpg");
+      background-size: 100%;
       color: #ffffff;
   }
   .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
+      /*background-color: #474e5d; Dark Blue */
+      background-color: #000620;
       color: #ffffff;
   }
   .bg-3 {
       background-color: #ffffff; /* White */
       color: #555555;
+
   }
   .bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
+      background-color: #000620; /* Black Gray */
       color: #fff;
   }
   .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
   }
+  .navbar-nav > .dropdown-menu { background-color: #000620;}
   .navbar {
-	height:12%;
+    height: 14%;
+
     width: 100%;
     position: fixed;
     top: 0;
+    background-color: #00051c;
+    box-shadow: 0 12px 10px -10px blue;
       padding-top: 15px;
       padding-bottom: 15px;
       border: 0;
       z-index: 1;
       border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5%;
+      /*font-size: 12px;*/
       letter-spacing: 5px;
+      font-family: serif;
+
+  }
+  .navbar-nav > .dropdown-menu { background-color: #FF0000; }
+  .nav li {
+    font-size : 15px  ;
   }
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      /*color: #1abc9c !important;*/
+      color: #005ae5 !important;
+      font-size : 17px  ;
   }
-  #myCarousel
-  {
-    /*margin-left: 1%;
-    margin-right: 1%;*/
+  .navbar-brand{
+    font-size: 25px;
   }
-  /*#myCarousel1
-  {
-    margin-left: 750px;
-    margin-top: -180px;
-    }
-    #myCarousel2
-    {
-      margin-left: 200px;
-      margin-top: 20px;
-      }
-      #myCarousel3
-      {
-        margin-left: 750px;
-        margin-top: -180px;
-        }*/
-        /*.container-fluid bg-4 text-center{
-          position: absolute;
-          bottom: 0;
-        }*/
+  .navbar-header a:hover{
+    color: #005ae5 !important;
+    font-size : 24px  ;
+  }
         .col-md-6 img{
-          border:4px black solid;
+          border:2px #000620 solid;
           border-radius: 50%;
+          box-shadow: 8px 8px 6px -8px blue;
         }
-        .college img{
-          width:50%;
-          heigth:350px;
-          border-radius: 36%;
-          padding-right:50%;
-        }
+
         .col-sm-4 img{
           margin: 15%;
           height: 70%;
           margin-bottom: 5%;
-          border:4px solid black;
+          box-shadow: 8px 8px 6px -8px blue;
+          border:2px solid #000620;
           border-radius: 50%;
         }
         #muskan img{
           margin: 15%;
           height: 70%;
-          border:4px solid black;
+          border:2px solid #000620;
+          box-shadow: 8px 8px 6px -8px blue;
           border-radius: 50%;
           margin-bottom: 5%;
           }
           #aman img{
-            border:4px solid black;
+            border:2px solid #000620;
+            box-shadow: 8px 8px 6px -8px blue;
             margin: 15%;
             margin-bottom: 5%;
             height: 70%;
@@ -125,14 +125,17 @@
           #xyz .caption{
             color:black
           }
-          .college{
-            border-radius: 2%;
-            width:90%;
-            border:5px solid black;
-          }
           .whole {
             margin-top: 5%;
             z-index: 2;
+          }
+          #myCarousel
+          {
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 0;
+            z-index: 0;
           }
   </style>
 </head>
@@ -161,22 +164,6 @@
 
 
 
-<!--<div class="col-md-6 college">
-  <a href="http://www.punjabiuniversity.ac.in/">
-    <img src="1.jpg">
-  </a>
-</div>
-<div class="col-md-6 ucoe text-center ">
-  <h2>UCOE</h2>
-  <p>
-    <h2>Punjabi University </h2>
-  </p>
-  <p>
-    <h3>PATIALA</h3>
-  </p>
-</div>-->
-
-
 <div class="whole">
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
@@ -184,23 +171,23 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="0" ></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
+    <div class="item ">
+      <img src="rust.jpg" >
+    </div>
+
+    <div class="item">
+      <img src="GitHub.png" >
+    </div>
+
     <div class="item active">
-      <img src="rust.jpg" alt="campus">
-    </div>
-
-    <div class="item">
-      <img src="GitHub.png" alt="Chicago">
-    </div>
-
-    <div class="item">
-      <img src="mozilla.png" alt="New York" id="aframe">
+      <img src="mozilla.png" >
     </div>
   </div>
 
@@ -214,9 +201,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<!-- <a href="http://punjabiuniversity.ac.in"><img class="college" src="college.jpg"></a> -->
-<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
   <h1 class="margin">Who We Are?</h1>
   <p>
     <div class="row">
@@ -264,14 +248,12 @@
   <p> WE are going to teach you what we learn and what we work.</p>
   <p>We will build Something Innovative, Something Different and Something Awesome.</p>
   <p>We are Protecting Open Source. We are motivating your efforts. We are helping you to build the future of you dreams.</p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center" id="team">
-  <h3 class="margin">Here We Are!</h3><br>
+  <h2 class="margin" style="font-weight:bold">Here We Are!</h2><br>
   <p><button type="button" class="btn btn-success pull-left" onclick="location.href = 'https://mozillians-team.slack.com/';" ><i class="fa fa-slack"></i>  Join on Slack! </button>
 
   <button type="button" class="btn btn-primary pull-right" onclick="location.href = 'https://www.facebook.com/mozillacampusclubucoe/';" ><i class="fa fa-facebook-square"></i>  Follow on Fb!  </button></p>
@@ -333,15 +315,20 @@
       </a>
       </div>
 
-      <!-- <div class="col-sm-4">
-        <p>Abhimanyu</p>
-        <p>The Team Python</p>
-        <img src="muskan.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div> -->
+
     </div>
+
     <div id="xyz">
+      <div class="col-sm-4" id="aakriti">
+          <a href="https://www.facebook.com/profile.php?id=100018534257939"><img src="aakriti.jpg"  style="width:70%" alt="Image">
+          <div class="caption">
+            <p>Aakriti Mittal</p>
+
+          </div>
+          </a>
+        </div>
       <div class="col-sm-4" id="muskan">
-        <a href=""><img src="muskan.jpg" class="img-responsive margin" style="width:70%" alt="Image">
+        <a href=""><img src="muskan.jpg" class="img-responsive margin" style="width:75%" alt="Image">
         <div class="caption">
           <p>Muskan</p>
           <!-- <p>Of the Team Rust</p> -->
@@ -354,14 +341,6 @@
         <div class="caption">
           <p>Aman</p>
           <!-- <p>of the Team Ionic</p> -->
-        </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="https://www.facebook.com/profile.php?id=100018534257939&sk=wall"><img src="aakriti.jpg" class="img-responsive margin" style="width:70%" alt="Image">
-        <div class="caption">
-          <p>Aakriti</p>
-          <!-- <p>Of the Team Rust</p> -->
         </div>
         </a>
       </div>

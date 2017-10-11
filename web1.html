@@ -128,12 +128,12 @@
             margin-top: 5%;
             z-index: 2;
           }
-          #myCarousel
+          #myCarousel--
           {
-            width: 50%;
+            /*width: 50%;
             margin-left: 25%;
             margin-right: 25%;
-            margin-top: 0;
+            margin-top: 0;*/
             z-index: 0;
           }
           .outer{
@@ -161,6 +161,21 @@
           .bg-3 marquee{
             box-shadow: 8px 8px 6px -8px #474e5d;
           }
+          .carousel-inner > .item
+          {
+            height: 70vh;
+          }
+
+        .carousel-inner > .item > img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          max-height: 800px;
+          width: auto;
+        }
 
   </style>
 </head>
@@ -193,7 +208,7 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
 <!--  testing carousel///////////////////////////////////////-->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide " data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
@@ -228,7 +243,7 @@
   </a>
 </div>
 <br>
-<marquee loop="0" behavior="slide" direction="up"  width="50%" bgcolor="#474e5d" style="border-radius:2%">
+<marquee scrolldelay="120" loop="0" behavior="slide" direction="up"  width="50%" bgcolor="#474e5d" style="border-radius:2%">
 <h1 class="margin" style="font-size:20px; font-weight:bold; font-family:cursive;color:white;text-align:center;">Who We Are?</h1>
 </marquee>
   <p>

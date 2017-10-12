@@ -100,18 +100,19 @@
     /*color: #005ae5 !important;*/
     font-size : 20.5px  ;
   }
-        .col-md-6 img{
-          border:2px #000620 solid;
+        .col-md-4 img{
+          border:3px #474e5d solid;
           border-radius: 50%;
-          box-shadow: 8px 8px 6px -8px #1abc9c;
+          border-style: inset;
+          box-shadow: 8px 8px 6px -8px #474e5d;
         }
 
         .col-sm-3 img{
           margin: 15%;
           height: 70%;
           margin-bottom: 5%;
-          box-shadow: 8px 8px 6px -8px #1abc9c;
-          border:2px solid #000620;
+          box-shadow: 8px 8px 6px -8px #474e5d;
+            border:3px #474e5d solid;
           border-radius: 50%;
         }
 
@@ -131,7 +132,7 @@
 
           .outer{
             text-align: center;
-            padding-left: 33%;
+            padding-left:33%;
           }
           .sub {
             font-family:sans-serif;
@@ -151,9 +152,7 @@
           .bg-4 a:hover{
             text-decoration: none;
           }
-          .bg-3 marquee{
-            box-shadow: 8px 8px 6px -8px #474e5d;
-          }
+
           #myCarousel
           {
             /*width: 50%;
@@ -179,6 +178,13 @@
         }
         .carousel-control.left,.carousel-control.right {
           background-image: none;
+        }
+        marquee{
+          border-right: solid #1abc9c 4px;
+          border-left: solid #1abc9c 4px;
+          border-style: inset;
+          box-shadow: 8px 8px 6px -8px #474e5d;
+          /*border-radius:1%;*/
         }
 
   </style>
@@ -247,15 +253,24 @@
   </a>
 </div>
 <br>
-<marquee scrolldelay="120" loop="0" behavior="slide" direction="up"  width="50%" bgcolor="#474e5d" style="border-radius:2%">
-<h1 class="margin" style="font-size:20px; font-weight:bold; font-family:cursive;color:white;text-align:center;">Who We Are?</h1>
-</marquee>
+        <marquee class="col-md-8" width="50%" scrolldelay="120" loop="0" behavior="slide" direction="up"   bgcolor="#474e5d" >
+        <h1 class="margin" style="font-size:20px; font-weight:bold; font-family:cursive;color:white;text-align:center;">Who We Are?</h1>
+        </marquee>
+
+        <marquee class="col-md-4" width="100%" scrolldelay="120" loop="0" behavior="slide" direction="up"  bgcolor="#474e5d" >
+        <h1 class="margin" style="font-size:20px; font-weight:bold; font-family:cursive;color:white;text-align:center;">Notifications!!</h1>
+        </marquee>
+
+<br >
+<br>
+<br>
+
   <p>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="img-rounded">
           <a href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/13173942_1110113019052364_382863322563506565_n.jpg?oh=129efaa2c61d35443c4698b9107d21fc&oe=5A1DB27C">
-            <img src="sir.jpg" alt="Incharge" style="width:50%;"  >
+            <img src="sir.jpg" alt="Incharge" style="width:70%;"  >
 
 
             <div class="caption" color=white style="padding-top:10px">
@@ -267,10 +282,10 @@
       </div>
 
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="img-rounded">
         <a href="https://www.linkedin.com/in/parth-gupta-892623129/">
-          <img src="parth1.jpg" alt="Captian" style="width:47%"  >
+          <img src="parth1.jpg" alt="Captian" style="width:70%"  >
 
         <div class="caption" style="padding-top:10px" >
             <p style="font-size:20px; font-weight:bold; font-family:cursive;color:black;"> Leaded By Club Captain</p>
@@ -279,6 +294,10 @@
         </a>
       </div>
     </div>
+
+    <marquee class="col-md-4" scrolldelay="130"  direction="up"  height="300px;"  bgcolor="#474e5d" style="border-right: solid #1abc9c 20px;">
+    <h1 class="margin" style="font-size:20px; font-weight:bold; font-family:cursive;color:white;text-align:center;">Notifications will go here </h1>
+    </marquee>
 
 
   </div>

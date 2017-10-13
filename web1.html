@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Mozilla@UCOE</title>
@@ -59,16 +60,13 @@
       padding-top: 40px;
       padding-bottom: 40px;
   }
-  /*.navbar-nav > .dropdown-menu { background-color: #1abc9c;}*/
+  /*.navbar-nav > .dropdown-menu { background-color: #1abc9c;}
   .navbar {
     height: 11%;
     width: 100%;
     position: fixed;
     top: 0;
-
-    /*background-color: #00051c;*/
     background-color: #474e5d;
-    /*box-shadow: 0 12px 10px -10px blue;*/
     box-shadow: 0 12px 10px -10px #1abc9c;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -76,22 +74,44 @@
       z-index: 1;
       border-radius: 0;
       font-weight: bold;
-      /*margin-bottom: 5%;*/
-      /*font-size: 12px;*/
       letter-spacing: 3px;
       font-family: serif;
 
   }
-  .navbar > .dropdown-menu { background-color: #474e5d; }
+  */
+  .navbar-nav > .dropdown-menu { background-color: #1abc9c; }
+  .navbar {
+	  width: 100%;
+
+    box-shadow: 0 12px 10px -10px #1abc9c;
+	position:fixed;
+    top: 0;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      /*background-color: #474e5d;*/
+      border: 0;
+      z-index: 1;
+      border-radius: 4%;
+      margin-bottom: 0;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-family: serif;
+  }
   .nav li {
     font-size : 15px  ;
+  }
+  #myNavbar
+  {
+    color: white;
   }
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
       /*color: #005ae5 !important;*/
       font-size : 15.5px  ;
   }
-  .navbar-brand{
+  .navbar-brand {
+    color: white;
     font-size: 20px;
     font-family:monospace;
   }
@@ -202,13 +222,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="color:white">Moz://a Club UCOE</a>
+      <a class="navbar-brand" href="#" >Moz://a Club UCOE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#who" style="color:white">WHO?</a></li>
-        <li><a href="#moto" style="color:white">OUR MOTO!</a></li>
-        <li><a href="#team" style="color:white">About Us?</a></li>
+        <li><a href="#who" >WHO?</a></li>
+        <li><a href="#moto" >OUR MOTO!</a></li>
+        <li><a href="#team" >About Us?</a></li>
       </ul>
     </div>
   </div>
